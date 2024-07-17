@@ -2,9 +2,6 @@ cmake_minimum_required(VERSION 3.21)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
-project(TextureLoader VERSION 1.0.0)
-
 if(${GEODE_TARGET_PLATFORM} STREQUAL "iOS" OR IOS)
   message(STATUS "building for ios :3")
   unset(CMAKE_OSX_ARCHITECTURES)
@@ -12,8 +9,11 @@ if(${GEODE_TARGET_PLATFORM} STREQUAL "iOS" OR IOS)
   set(CMAKE_OSX_DEPLOYMENT_TARGET "14.0")
   set(CMAKE_SYSTEM_NAME "iOS")
 else()
+  message(STATUS "meow meow mrrp mrrp mrow :333")
   set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 endif()
+
+project(TextureLoader VERSION 1.0.0)
 
 file(GLOB SOURCES
 	src/*.cpp
