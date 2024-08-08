@@ -5,7 +5,7 @@
 #include <Geode/utils/file.hpp>
 #include <Geode/utils/ranges.hpp>
 #include <Geode/binding/GameManager.hpp>
-#include <Geode/binding/FMODAudioEngine.hpp>
+//#include <Geode/binding/FMODAudioEngine.hpp>
 #include <utility>
 
 using namespace geode::prelude;
@@ -118,7 +118,7 @@ void PackManager::updateAppliedPacks() {
 
 void PackManager::applyPacks(CreateLayerFunc func) {
     this->updateAppliedPacks();
-    FMODAudioEngine::sharedEngine()->stopAllMusic();
+    //FMODAudioEngine::sharedEngine()->stopAllMusic();
     reloadTextures(std::move(func));
 }
 
