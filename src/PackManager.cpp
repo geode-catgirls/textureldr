@@ -4,7 +4,6 @@
 #include <Geode/loader/Loader.hpp>
 #include <Geode/utils/file.hpp>
 #include <Geode/utils/ranges.hpp>
-// #include <Geode/binding/GameManager.hpp>
 #ifndef GEODE_IS_IOS
 #include <Geode/binding/FMODAudioEngine.hpp>
 #endif

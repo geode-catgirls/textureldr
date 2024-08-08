@@ -2,9 +2,11 @@
 #include <Geode/ui/General.hpp>
 #include <Geode/ui/Notification.hpp>
 #include <Geode/utils/cocos.hpp>
+#include <Geode/utils/file.hpp>
 #include <Geode/binding/CCMenuItemSpriteExtra.hpp>
 #include <Geode/binding/MenuLayer.hpp>
 #include <Geode/binding/ButtonSprite.hpp>
+#include <Geode/binding/GameManager.hpp>
 #include "PackManager.hpp"
 #include "PackNode.hpp"
 
