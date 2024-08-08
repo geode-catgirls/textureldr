@@ -3,6 +3,7 @@
 #include <string>
 #include <optional>
 #include <memory>
+#include <filesystem>
 #include <Geode/utils/Result.hpp>
 #include <Geode/utils/VersionInfo.hpp>
 #include <Geode/ui/EnterLayerEvent.hpp>
