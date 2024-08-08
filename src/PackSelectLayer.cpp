@@ -177,7 +177,8 @@ void PackSelectLayer::onApply(CCObject*) {
 }
 
 void PackSelectLayer::onOpenFolder(CCObject*) {
-    utils::file::openFolder(PackManager::get()->getPackDir());
+    //utils::file::openFolder(PackManager::get()->getPackDir());
+    file::openFolder(PackManager::get()->getPackDir());
 }
 
 void PackSelectLayer::onReloadPacks(CCObject*) {
