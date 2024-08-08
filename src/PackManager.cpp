@@ -4,8 +4,10 @@
 #include <Geode/loader/Loader.hpp>
 #include <Geode/utils/file.hpp>
 #include <Geode/utils/ranges.hpp>
-#include <Geode/binding/GameManager.hpp>
-//#include <Geode/binding/FMODAudioEngine.hpp>
+// #include <Geode/binding/GameManager.hpp>
+#ifndef GEODE_IS_IOS
+#include <Geode/binding/FMODAudioEngine.hpp>
+#endif
 #include <utility>
 
 using namespace geode::prelude;
@@ -118,7 +120,9 @@ void PackManager::updateAppliedPacks() {
 
 void PackManager::applyPacks(CreateLayerFunc func) {
     this->updateAppliedPacks();
-    //FMODAudioEngine::sharedEngine()->stopAllMusic();
+    #ifndef GEODE_IS_IOS
+    FMODAudioEngine::sharedEngine()->stopAllMusic();
+    #endif
     reloadTextures(std::move(func));
 }
 
